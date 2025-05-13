@@ -1,0 +1,131 @@
+
+.btn-iniciar-sesion {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  width: 360px;
+  text-align: center;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+}
+
+h2 {
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+p.subtitle {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.form-group .forgot {
+  float: right;
+  font-size: 12px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.account-type {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.account-type button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.account-type button.active {
+  background-color: #000;
+  color: white;
+  font-weight: bold;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.bottom-text {
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.bottom-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.back-link {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 13px;
+  color: gray;
+  text-decoration: none;
+}

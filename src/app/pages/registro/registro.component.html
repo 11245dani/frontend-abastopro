@@ -1,0 +1,39 @@
+<a routerLink="/" class="back-link">&larr; Volver al inicio</a>
+
+<div class="container">
+  <div class="logo">
+    <img src="assets/Logo.jpeg" alt="Logo de la empresa" />
+  </div>
+
+  <div class="title">
+    <h2>Crear una cuenta</h2>
+    <p>Selecciona el tipo de cuenta que deseas crear</p>
+  </div>
+
+  <div class="account-type">
+    <button [class.active]="tipoSeleccionado === 'tienda'" (click)="mostrarFormulario('tienda')">Tienda</button>
+    <button [class.active]="tipoSeleccionado === 'distribuidor'" (click)="mostrarFormulario('distribuidor')">Distribuidor</button>
+  </div>
+
+  <form *ngIf="tipoSeleccionado === 'tienda'" (ngSubmit)="registrarTienda()">
+    <input type="text" placeholder="Nombre de la tienda" required [(ngModel)]="tienda.nombre" name="nombreTienda" />
+    <input type="email" placeholder="Correo electrónico" required [(ngModel)]="tienda.email" name="emailTienda" />
+    <input type="password" placeholder="Contraseña" required [(ngModel)]="tienda.password" name="passwordTienda" />
+    <input type="text" placeholder="Dirección" required [(ngModel)]="tienda.direccion" name="direccionTienda" />
+    <input type="tel" placeholder="Teléfono" required [(ngModel)]="tienda.telefono" name="telefonoTienda" />
+    <button type="submit" class="submit-btn">Registrarse como Tienda</button>
+  </form>
+
+  <form *ngIf="tipoSeleccionado === 'distribuidor'" (ngSubmit)="registrarDistribuidor()">
+    <input type="text" placeholder="Nombre de la empresa" required [(ngModel)]="distribuidor.nombre" name="nombreDistribuidor" />
+    <input type="email" placeholder="Correo electrónico" required [(ngModel)]="distribuidor.email" name="emailDistribuidor" />
+    <input type="password" placeholder="Contraseña" required [(ngModel)]="distribuidor.password" name="passwordDistribuidor" />
+    <input type="text" placeholder="Dirección" required [(ngModel)]="distribuidor.direccion" name="direccionDistribuidor" />
+    <input type="tel" placeholder="Teléfono" required [(ngModel)]="distribuidor.telefono" name="telefonoDistribuidor" />
+    <button type="submit" class="submit-btn">Registrarse como Distribuidor</button>
+  </form>
+
+  <div class="toggle">
+<p>¿Ya tienes una cuenta? <a routerLink="/iniciar-sesion">Iniciar sesión</a></p>
+  </div>
+</div>

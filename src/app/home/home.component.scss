@@ -1,3 +1,6 @@
+
+
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -10,6 +13,22 @@ header {
   align-items: center;
   padding: 20px 40px;
   border-bottom: 1px solid #ddd;
+}
+
+.boton-iniciar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton-iniciar:hover {
+  background-color: #333;
 }
 
 .logo-text {

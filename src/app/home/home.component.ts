@@ -10,7 +10,14 @@ export class HomeComponent {
 
   constructor(private router: Router) {}
 
-  goToRegister() {
-    this.router.navigate(['/registro']);
-  }
+
+
+  goToLogin() {
+  this.router.navigate(['/iniciar-sesion']);
+}
+
+  goToRegistro() {
+  this.router.navigate(['/registro']);
+}
+
 }
