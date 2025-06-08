@@ -17,6 +17,25 @@
     <p>Nuestra plataforma facilita la conexión entre tiendas y distribuidores, optimizando el proceso de pedidos y entregas.</p>
     <div class="btn-group">
       <button class="btn">Más sobre nosotros</button>
+      <button onclick="toggleInfo()">Más sobre nosotros</button>
+
+<div id="info" style="display: none; margin-top: 10px;">
+  <h3>Sobre Nosotros</h3>
+  <p>
+    AbastoPro nació en 2025 como un proyecto universitario con una visión clara: facilitar el abastecimiento de las tiendas de barrio en Colombia. Identificamos un problema común: muchas distribuidoras aún dependen de visitas físicas para saber qué productos necesitan las tiendas.
+
+Nuestra solución conecta directamente a tiendas y distribuidoras a través de una plataforma digital simple y eficiente. Así, las tiendas pueden hacer sus pedidos cuando lo necesiten, y las distribuidoras optimizan sus rutas y ventas sin perder tiempo.
+
+Hoy, AbastoPro es mucho más que un proyecto: es una herramienta creada para fortalecer el comercio local y modernizar la forma en que se mueve la canasta familiar.
+  </p>
+</div>
+
+<script>
+  function toggleInfo() {
+    const info = document.getElementById("info");
+    info.style.display = info.style.display === "none" ? "block" : "none";
+  }
+</script>
       <button class="btn light">Cómo funciona</button>
     </div>
   </div>
